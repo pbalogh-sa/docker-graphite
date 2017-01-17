@@ -13,7 +13,7 @@ RUN apt-get -y update && \
     graphite-web \
     graphite-carbon \
     apache2 \
-    libapache2-mod-wsgi \
+    libapache2-mod-wsgi && \
     apt-get -y autoremove && \
     apt-get -y autoclean && \
     apt-get clean && \
