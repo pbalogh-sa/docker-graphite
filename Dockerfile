@@ -17,7 +17,7 @@ RUN apt-get -y update && \
     apt-get -y autoremove && \
     apt-get -y autoclean && \
     apt-get clean && \
-    rm -rf /tmp/* /var/tmp/*
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN sed -i "s/#SECRET_KEY.*/SECRET_KEY = 'poke_secret'/g" /etc/graphite/local_settings.py
 RUN graphite-manage syncdb --noinput
