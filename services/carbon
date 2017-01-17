@@ -1,0 +1,2 @@
+#!/usr/bin/execlineb -P
+/usr/bin/carbon-cache --config=/etc/carbon/carbon.conf start
