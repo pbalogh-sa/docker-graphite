@@ -1,2 +1,2 @@
 #!/usr/bin/execlineb -P
-/usr/bin/carbon-cache --config=/etc/carbon/carbon.conf start
+/usr/bin/carbon-cache --nodaemon --config=/etc/carbon/carbon.conf start
